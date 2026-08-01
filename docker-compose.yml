@@ -1,0 +1,10 @@
+services:
+  jupyter:
+    container_name: my-jupyter-env
+    image: jupyter/scipy-notebook:latest
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_PASSWORD}
+    ports:
+      - "${JUPYTER_HOST_PORT}:8888"
+    volumes:
+      - ${PROJECT_PATH}:/home/jovyan/work
