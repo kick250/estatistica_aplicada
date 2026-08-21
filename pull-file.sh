@@ -1,0 +1,1 @@
+scp tp2-machine:~/app/estatistica_aplicada/local/tp2.ipynb ./local
